@@ -83,29 +83,29 @@ This section lists the libraries that implement the Apache Iceberg specification
 
 | Operation                   | Java | PyIceberg | Rust | Go | C++ |
 |-----------------------------|------|-----------|------|----|-----|
-| Update schema               | Y    | Y         | Y    | N  | Y   |
-| Update partition spec       | Y    | Y         | Y    | N  | Y   |
+| Update schema               | Y    | Y         | Y    | Y  | Y   |
+| Update partition spec       | Y    | Y         | Y    | Y  | Y   |
 | Update table properties     | Y    | Y         | Y    | Y  | Y   |
-| Replace sort order          | Y    | N         | Y    | N  | Y   |
-| Update table location       | Y    | Y         | Y    | N  | Y   |
+| Replace sort order          | Y    | N         | Y    | Y  | Y   |
+| Update table location       | Y    | Y         | Y    | Y  | Y   |
 | Update statistics           | Y    | Y         | Y    | Y  | Y   |
 | Update partition statistics | Y    | N         | N    | N  | N   |
-| Expire snapshots            | Y    | N         | N    | N  | N   |
-| Manage snapshots            | Y    | N         | N    | N  | N   |
+| Expire snapshots            | Y    | N         | N    | Y  | N   |
+| Manage snapshots            | Y    | N         | N    | Y  | N   |
 
 ### Table Spec V2
 
 | Operation                   | Java | PyIceberg | Rust | Go | C++ |
 |-----------------------------|------|-----------|------|----|-----|
-| Update schema               | Y    | Y         | N    | N  | Y   |
-| Update partition spec       | Y    | Y         | N    | N  | Y   |
+| Update schema               | Y    | Y         | N    | Y  | Y   |
+| Update partition spec       | Y    | Y         | N    | Y  | Y   |
 | Update table properties     | Y    | Y         | Y    | Y  | Y   |
-| Replace sort order          | Y    | N         | Y    | N  | Y   |
-| Update table location       | Y    | Y         | Y    | N  | Y   |
+| Replace sort order          | Y    | N         | Y    | Y  | Y   |
+| Update table location       | Y    | Y         | Y    | Y  | Y   |
 | Update statistics           | Y    | Y         | Y    | Y  | Y   |
 | Update partition statistics | Y    | N         | N    | N  | N   |
-| Expire snapshots            | Y    | N         | N    | N  | N   |
-| Manage snapshots            | Y    | N         | N    | N  | N   |
+| Expire snapshots            | Y    | N         | N    | Y  | N   |
+| Manage snapshots            | Y    | N         | N    | Y  | N   |
 
 ## Table Update Operations
 
@@ -114,7 +114,7 @@ This section lists the libraries that implement the Apache Iceberg specification
 | Operation         | Java | PyIceberg | Rust | Go | C++ |
 |-------------------|------|-----------|------|----|-----|
 | Append data files | Y    | Y         | Y    | Y  | Y   |
-| Rewrite files     | Y    | Y         | N    | N  | N   |
+| Rewrite files     | Y    | Y         | N    | Y  | N   |
 | Rewrite manifests | Y    | Y         | N    | Y  | N   |
 | Overwrite files   | Y    | Y         | N    | Y  | N   |
 | Delete files      | Y    | Y         | N    | Y  | N   |
@@ -124,10 +124,10 @@ This section lists the libraries that implement the Apache Iceberg specification
 | Operation         | Java | PyIceberg | Rust | Go | C++ |
 |-------------------|------|-----------|------|----|-----|
 | Append data files | Y    | Y         | Y    | Y  | Y   |
-| Rewrite files     | Y    | Y         | N    | N  | N   |
+| Rewrite files     | Y    | Y         | N    | Y  | N   |
 | Rewrite manifests | Y    | Y         | N    | Y  | N   |
 | Overwrite files   | Y    | Y         | N    | Y  | N   |
-| Row delta         | Y    | N         | N    | N  | N   |
+| Row delta         | Y    | N         | N    | Y  | N   |
 | Delete files      | Y    | Y         | N    | Y  | N   |
 
 ## Table Read Operations
@@ -166,7 +166,7 @@ This section lists the libraries that implement the Apache Iceberg specification
 |------------------------|------|-----------|------|----|-----|
 | Append data            | Y    | Y         | Y    | Y  | N   |
 | Write position deletes | Y    | N         | N    | Y  | N   |
-| Write equality deletes | Y    | N         | Y    | N  | N   |
+| Write equality deletes | Y    | N         | Y    | Y  | N   |
 
 ## Catalogs
 
